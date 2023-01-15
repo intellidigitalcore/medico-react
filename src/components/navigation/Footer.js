@@ -16,9 +16,9 @@ const Footer = () => {
 
             {/* company */}
             <div className="sm:col-span-3 lg:col-span-4 text-center lg:text-left">
-              <a href="index.html" className="inline-block mx-auto lg:mx-0 w-[150px] md:w-auto">
+              <Link to="/" className="inline-block mx-auto lg:mx-0 w-[150px] md:w-auto">
                 <img src={logo} alt="Logo"/>
-              </a>
+              </Link>
               <p className="text-white/60 text-sm lg:text-base py-4 md:py-6">Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam. Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam</p>
               <ul className="flex items-center justify-center lg:justify-start gap-6">
                 <li><Link to="" className="group"><FaFacebookF className="fab fa-facebook-f text-white/60 transition-all duration-300 group-hover:text-primary"/></Link></li>
