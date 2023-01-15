@@ -9,7 +9,7 @@
 body {
   width: 100%;
   max-width: 100%;
-  font-family: 'Poppins', sans-serif;
+  /* font-family: 'Poppins', sans-serif; */
 }
 
 html {
@@ -98,6 +98,199 @@ a:focus {
   outline: none;
 }
 
-.scroll-lock {
-  overflow: hidden;
+/* play button animation */
+@keyframes play-animation {
+  from {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  to {
+    opacity: 0;
+    transform: scale(2);
+  }
 }
+
+.play-animation{
+  animation-duration: 2s;
+  animation-delay: 0;
+  animation-iteration-count: infinite;
+}
+
+/* preloader animation */
+@keyframes zoom-in-zoom-out {
+  0% {
+    transform: scale(1, 1);
+  }
+  50% {
+    transform: scale(1.3, 1.3);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+
+.zoom-in-out-box {
+  animation: zoom-in-zoom-out 2s ease infinite;
+}
+
+/* custom scrollbar */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 4px;
+}
+
+.custom-scrollbar::-moz-scrollbar {
+  width: 4px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background-color: #F4F4F4;
+}
+
+.custom-scrollbar::-moz-scrollbar-track {
+  background-color: #F4F4F4;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.custom-scrollbar::-moz-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+/* scrollbar hide */
+.scrollbar-hidden::-webkit-scrollbar{
+  display: none;
+  width: 0;
+  scrollbar-width: none;
+}
+
+.scrollbar-hidden{
+  scrollbar-width: none;
+}
+
+/* login */
+.login .left-bar{
+  background: linear-gradient(159.99deg, #045AB5 0%, #0495B5 100%);
+}
+
+/* navbar css */
+.nav-link.active {
+  @apply text-secondary;
+}
+
+/* why-we */
+.why-we {
+  background-image: linear-gradient(to right, rgba(49, 79, 162, 0.05) 55%, #37D6C9 55%);
+}
+
+@media screen and (max-width:767px) {
+  .why-we {
+    background-image: linear-gradient(to bottom, rgba(49, 79, 162, 0.05) 65%, #37D6C9 65%);
+  }
+}
+
+/* service */
+@media (min-width:1240px) and (max-width:1279px) {
+  .service-grid{
+    @apply !grid-cols-3;
+  }
+}
+
+/* pricing */
+.pricing-card.active{
+  @apply bg-primary;
+}
+
+.pricing-card.active h4,
+.pricing-card.active h5,
+.pricing-card.active ul li i,
+.pricing-card.active ul li p{
+  @apply text-white;
+}
+
+.pricing-card.active h5{
+  @apply py-4 lg:py-6 xl:py-8;
+}
+
+.pricing-card.active ul{
+  @apply mb-4 lg:mb-6 xl:mb-8;
+}
+
+.pricing-card.active a{
+  @apply py-[6px] md:py-[10px] border border-white;
+}
+
+/* paginatioin */
+.pagination ul li .active{
+  @apply bg-secondary border-secondary text-white;
+}
+
+/* blog */
+.blog-filter-btns .active button{
+  @apply bg-secondary/10 text-secondary;
+}
+
+@media (min-width:1024px) and (max-width: 1239px) {
+  .popular-blog-list{
+    max-height: 408px;
+  }
+}
+
+/* appointment */
+.appointment .tab-list li h5,
+.appointment .tab-list li p{
+  opacity: 0.32;
+}
+
+.appointment .tab-list li.active h5,
+.appointment .tab-list li.active p{
+  opacity: 1;
+}
+
+.appointment .tab-list li.checked .check-dot{
+  @apply hidden;
+}
+
+.appointment .tab-list li.checked .checkmark{
+  @apply block;
+}
+
+.appointment .single-content{
+  display: none;
+}
+
+.appointment .single-content.show{
+  display: flex;
+}
+
+.appointment .clinic-select input:checked + .clinic-location{
+  @apply border border-[#0683E3];
+}
+
+.appointment .department-select input:checked + .single-department,
+.appointment .doctor-select input:checked + .single-doctor{
+  @apply border border-primary;
+}
+
+.appointment .clinic-select input:checked + .clinic-location .active-check-mark,
+.appointment .department-select input:checked + .single-department .active-check-mark,
+.appointment .doctor-select input:checked + .single-doctor .active-check-mark{
+  @apply block;
+}
+
+.file-label{
+  background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='8' ry='8' stroke='%2300000040' stroke-width='2' stroke-dasharray='6%2c 14' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
+  border-radius: 8px;
+}
+
+#tabs-nav .active a{
+  @apply bg-secondary/10;
+}
+
+/* @media screen and (min-width:1024px) {
+  .map-bg{
+    background-image: url('../src/images/map.png');
+  }
+} */
