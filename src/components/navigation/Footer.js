@@ -1,4 +1,3 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
 import logo from '../../assets/images/footer-logo.png';
 import {FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn, FaYoutube} from 'react-icons/fa';
@@ -21,11 +20,11 @@ const Footer = () => {
               </Link>
               <p className="text-white/60 text-sm lg:text-base py-4 md:py-6">Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam. Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam</p>
               <ul className="flex items-center justify-center lg:justify-start gap-6">
-                <li><Link to="" className="group"><FaFacebookF className="fab fa-facebook-f text-white/60 transition-all duration-300 group-hover:text-primary"/></Link></li>
-                <li><Link to="" className="group"><FaTwitter className="fab fa-twitter text-white/60 transition-all duration-300 group-hover:text-primary"/></Link></li>
-                <li><Link to="" className="group"><FaInstagram className="fab fa-instagram text-white/60 transition-all duration-300 group-hover:text-primary"/></Link></li>
-                <li><Link to="" className="group"><FaLinkedinIn className="fab fa-linkedin-in text-white/60 transition-all duration-300 group-hover:text-primary"/></Link></li>
-                <li><Link to="" className="group"><FaYoutube className="fab fa-youtube text-white/60 transition-all duration-300 group-hover:text-primary"/></Link></li>
+                <li><Link to="/" className="group"><FaFacebookF className="fab fa-facebook-f text-white/60 transition-all duration-300 group-hover:text-primary"/></Link></li>
+                <li><Link to="/" className="group"><FaTwitter className="fab fa-twitter text-white/60 transition-all duration-300 group-hover:text-primary"/></Link></li>
+                <li><Link to="/" className="group"><FaInstagram className="fab fa-instagram text-white/60 transition-all duration-300 group-hover:text-primary"/></Link></li>
+                <li><Link to="/" className="group"><FaLinkedinIn className="fab fa-linkedin-in text-white/60 transition-all duration-300 group-hover:text-primary"/></Link></li>
+                <li><Link to="/" className="group"><FaYoutube className="fab fa-youtube text-white/60 transition-all duration-300 group-hover:text-primary"/></Link></li>
               </ul>
             </div>
 

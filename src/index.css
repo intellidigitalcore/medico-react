@@ -198,6 +198,23 @@ a:focus {
   }
 }
 
+/* department */
+.single-department:first-child{
+  @apply lg:border-r lg:border-b;
+}
+.single-department:nth-child(2){
+  @apply lg:border-b;
+}
+.single-department:nth-child(3){
+  @apply lg:border-l lg:border-b;
+}
+.single-department:nth-child(4){
+  @apply lg:border-r;
+}
+.single-department:nth-child(6){
+  @apply lg:border-l;
+}
+
 /* pricing */
 .pricing-card.active{
   @apply bg-primary;
@@ -289,8 +306,8 @@ a:focus {
   @apply bg-secondary/10;
 }
 
-/* @media screen and (min-width:1024px) {
+@media screen and (min-width:1024px) {
   .map-bg{
-    background-image: url('../src/images/map.png');
+    background-image: url('assets/images/map.png');
   }
-} */
+}
