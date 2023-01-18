@@ -245,7 +245,7 @@ a:focus {
 }
 
 /* blog */
-.blog-filter-btns .active button{
+.blog-filter-btns button.active{
   @apply bg-secondary/10 text-secondary;
 }
 
@@ -310,4 +310,52 @@ a:focus {
   .map-bg{
     background-image: url('assets/images/map.png');
   }
+}
+
+/* select-dropdown */
+.select-dropdown::-webkit-scrollbar {
+  width: 4px;
+}
+
+.select-dropdown::-moz-scrollbar {
+  width: 4px;
+}
+
+.select-dropdown::-webkit-scrollbar-track {
+  background-color: #F4F4F4;
+}
+
+.select-dropdown::-moz-scrollbar-track {
+  background-color: #F4F4F4;
+}
+
+.select-dropdown::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.select-dropdown::-moz-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+/* pagination */
+.pagination{
+  @apply flex items-center justify-center gap-[5px];
+}
+
+.pagination li a{
+  @apply inline-block h-8 w-8 capitalize rounded-lg border border-[#F1F1F1] bg-white text-center leading-8 text-[13px] font-medium text-[#333333];
+}
+
+.pagination li.active-page a{
+  @apply bg-secondary border-secondary text-white;
+}
+
+.pagination li.break a,
+.pagination li.previous a,
+.pagination li.next a{
+  @apply border-0;
+}
+
+.pagination li.disabled a{
+  @apply text-[#CCCCCC] cursor-default;
 }

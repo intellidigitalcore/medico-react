@@ -39,15 +39,15 @@ const Register = () => {
 
               <ul className="flex items-center gap-4">
                 <li>
-                  <Link to="/" className="w-12 h-12 rounded-[5px] bg-[#045AB5] flex items-center justify-center">
+                  <a href="#!" className="w-12 h-12 rounded-[5px] bg-[#045AB5] flex items-center justify-center">
                     <FaFacebookF className="text-xl text-white"/>
-                  </Link>
+                  </a>
                 </li>
                 <li>
-                  <Link to="/"
+                  <a href="#!"
                     className="w-12 h-12 rounded-[5px] bg-white border border-[#DCDBDD] flex items-center justify-center">
                     <img src={google} alt="Google Icon"/>
-                  </Link>
+                  </a>
                 </li>
               </ul>
 
@@ -60,44 +60,37 @@ const Register = () => {
               <form action="#!">
                 {/* Full Name */}
                 <div className="mb-4">
-                  <label htmlFor="full_name"
-                    className="block mb-2 text-base font-medium lg:font-semibold text-primary-text">Full Name</label>
-                  <input type="text" id="full_name" placeholder="Enter your Full Name"
-                    className="outline-none border border-solid border-black/20 rounded-lg w-full h-10 px-[10px] text-sm text-primary-text placeholder:text-sm placeholder:text-primary-text/40"/>
+                  <label htmlFor="full_name" className="block mb-2 text-base font-medium lg:font-semibold text-primary-text">Full Name</label>
+                  <input type="text" id="full_name" placeholder="Enter your Full Name" className="outline-none border border-solid border-black/20 rounded-lg w-full h-10 px-[10px] text-sm text-primary-text placeholder:text-sm placeholder:text-primary-text/40"/>
                 </div>
 
                 {/* email */}
                 <div className="mb-4">
-                  <label htmlFor="email_signup"
-                    className="block mb-2 text-base font-medium lg:font-semibold text-primary-text">Email</label>
-                  <input type="email" id="email_signup" placeholder="Enter your Email"
-                    className="outline-none border border-solid border-black/20 rounded-lg w-full h-10 px-[10px] text-sm text-primary-text placeholder:text-sm placeholder:text-primary-text/40"/>
+                  <label htmlFor="email_signup" className="block mb-2 text-base font-medium lg:font-semibold text-primary-text">Email</label>
+                  <input type="email" id="email_signup" placeholder="Enter your Email" className="outline-none border border-solid border-black/20 rounded-lg w-full h-10 px-[10px] text-sm text-primary-text placeholder:text-sm placeholder:text-primary-text/40"/>
                 </div>
 
                 {/* password */}
                 <div className="mb-10">
                   <p className="mb-2 text-base font-medium lg:font-semibold text-primary-text">Password</p>
                   <label htmlFor="pass_signup" className="block relative">
-                    <input type={showPassword ? 'text' : 'password'} placeholder="Enter your Password"
-                      className="input-psswd outline-none border border-solid border-black/20 rounded-lg w-full h-10 pl-[10px] pr-10 text-sm text-primary-text placeholder:text-sm placeholder:text-primary-text/40"/>
-                    <button type="button" onClick={() => setShowPassword(!showPassword)}
-                      className="eye-btn absolute top-1/2 -translate-y-1/2 right-[10px] h-4 w-4 flex items-center justify-center">
-                        {
-                          showPassword ? 
-                          <span className="h-5 eye-on">
-                            <BsEye className="text-xl text-primary-text/60"/>
-                          </span> :
-                          <span className="h-5 eye-off">
-                            <BsEyeSlash className="text-xl text-primary-text/60"/>
-                          </span>
-                        }
+                    <input type={showPassword ? 'text' : 'password'} id="pass_signup" placeholder="Enter your Password" className="input-psswd outline-none border border-solid border-black/20 rounded-lg w-full h-10 pl-[10px] pr-10 text-sm text-primary-text placeholder:text-sm placeholder:text-primary-text/40"/>
+                    <button type="button" onClick={() => setShowPassword(!showPassword)} className="eye-btn absolute top-1/2 -translate-y-1/2 right-[10px] h-4 w-4 flex items-center justify-center">
+                      {
+                        showPassword ? 
+                        <span className="h-5 eye-on">
+                          <BsEye className="text-xl text-primary-text/60"/>
+                        </span> :
+                        <span className="h-5 eye-off">
+                          <BsEyeSlash className="text-xl text-primary-text/60"/>
+                        </span>
+                      }
                     </button>
                   </label>
                 </div>
 
                 {/* submit button */}
-                <button type="submit"
-                  className="w-full box-border py-3 text-center text-white text-sm font-semibold rounded-md bg-primary shadow-[0px_10px_10px_rgba(55,214,201,0.24)] hover:bg-primary-alt hover:shadow-none">Register</button>
+                <button type="submit" className="w-full box-border py-3 text-center text-white text-sm font-semibold rounded-md bg-primary shadow-[0px_10px_10px_rgba(55,214,201,0.24)] hover:bg-primary-alt hover:shadow-none">Register</button>
               </form>
             </div>
           </div>
