@@ -1,14 +1,14 @@
-import React from 'react'
+import { Link } from 'react-router-dom';
 
 const SingleBlog = ({data}) => {
-  const {image, category, blogTitle, time, date, details} = data;
+  const {id, previewImage, category, blogTitle, time, date, details} = data;
 
   return (
     <div className="blog-item mix clinic">
-      <a href="blog-details.html" className="block group rounded-[10px] bg-white overflow-hidden shadow-[0px_0px_16px_rgba(0,0,0,0.08)] hover:shadow hover:shadow-[rgba(0,0,0,0.08)]">
+      <Link to={`/blog/${id}`} className="block group rounded-[10px] bg-white overflow-hidden shadow-[0px_0px_16px_rgba(0,0,0,0.08)] hover:shadow hover:shadow-[rgba(0,0,0,0.08)]">
         {/* image */}
         <div className="overflow-hidden w-full h-[180px]">
-          <img src={image} className="w-full h-full object-cover group-hover:scale-110 transition-all duration-300 ease-linear" alt="Blog"/>
+          <img src={previewImage} className="w-full h-full object-cover group-hover:scale-110 transition-all duration-300 ease-linear" alt="Blog"/>
         </div>
 
         {/* content */}
@@ -17,14 +17,14 @@ const SingleBlog = ({data}) => {
         </div>
 
         <div className="p-[10px] mt-3">
-          <h4 className="text-base font-semibold text-primary-text">{blogTitle}</h4>
+          <h4 className="text-base font-semibold text-primary-text">{blogTitle.length > 55 ? blogTitle.substr(0, 55) + '...' : blogTitle}</h4>
           <p className="text-xs text-primary-text/40 py-4">{details}</p>
           <div className="flex items-center justify-between pt-4 border-t border-black/10">
             <p className="text-xs text-primary-text/60">{time} to read</p>
             <p className="text-xs text-primary-text/60">{date}</p>
           </div>
         </div>
-      </a>
+      </Link>
     </div>
   )
 }

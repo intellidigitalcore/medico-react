@@ -1,16 +1,17 @@
+import { Link } from "react-router-dom";
 
 const SinglePopular = ({data}) => {
-  const {image, blogTitle, time, date} = data;
+  const {id, previewImage, blogTitle, time, date} = data;
   return (
     <li className="flex items-center gap-2 lg:gap-4 xl:gap-6">
       {/* <!-- image --> */}
       <div className="flex-shrink-0 h-[86px] w-[86px] rounded-lg overflow-hidden">
-        <img src={image} className="w-full h-full object-cover" alt="Blog"/>
+        <img src={previewImage} className="w-full h-full object-cover" alt="Blog"/>
       </div>
 
       {/* <!-- blog name --> */}
       <div>
-        <a href="blog-details.html" className="inline-block mb-2 text-base font-medium text-primary-text hover:text-secondary">{blogTitle}</a>
+        <Link to={`/blog/${id}`} className="inline-block mb-2 text-base font-medium text-primary-text hover:text-secondary">{blogTitle.length > 60 ? blogTitle.substr(0, 60) + '...' : blogTitle}</Link>
         <ul className="flex items-center gap-4">
           <li><p className="text-xs text-primary-text/40">{time} to read</p></li>
           <li><p className="text-xs text-primary-text/40">{date} </p></li>

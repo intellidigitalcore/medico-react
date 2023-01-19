@@ -249,11 +249,6 @@ a:focus {
   @apply bg-secondary/10 text-secondary;
 }
 
-@media (min-width:1024px) and (max-width: 1239px) {
-  .popular-blog-list{
-    max-height: 408px;
-  }
-}
 
 /* appointment */
 .appointment .tab-list li h5,
@@ -358,4 +353,157 @@ a:focus {
 
 .pagination li.disabled a{
   @apply text-[#CCCCCC] cursor-default;
+}
+
+
+
+
+
+
+
+
+
+
+
+.control-buttons {
+  text-align: center;
+}
+.control-buttons .btn {
+  padding: 7px 32px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 4px 12px;
+  cursor: pointer;
+  background-color: white;
+  color: black;
+  border: 2px solid #00b289;
+}
+.control-buttons .btn:hover {
+  background: #00b289;
+  color: white;
+}
+.control-buttons .btn:focus {
+  outline: 0;
+}
+
+.steps-card {
+  height: auto;
+  padding: 20px 30px;
+  background: white;
+  box-shadow: 1px 1px 4px grey;
+}
+
+.step-incomplete {
+  position: relative;
+  margin-bottom: 25px;
+  color: #a3aec2;
+}
+.step-incomplete .step-heading {
+  font-size: 14px;
+  color: #a3aec2;
+  margin-bottom: 5px;
+  font-weight: 100;
+}
+.step-incomplete .step-title {
+  font-size: 16px;
+  color: #a3aec2;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+.step-incomplete:before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: -20px;
+  border-radius: 100%;
+  width: 15px;
+  height: 15px;
+  background-color: #a3aec2;
+  border: 0 solid #a3aec2;
+}
+.step-incomplete:after {
+  content: "";
+  position: absolute;
+  top: 20px;
+  left: -13px;
+  width: 1px;
+  height: 99.5%;
+  background-color: #a3aec2;
+}
+
+.step-current {
+  position: relative;
+  margin-bottom: 25px;
+  color: #444a59;
+}
+.step-current .step-heading {
+  font-size: 14px;
+  color: #a3aec2;
+  margin-bottom: 5px;
+  font-weight: 100;
+}
+.step-current .step-title {
+  font-size: 16px;
+  color: #444a59;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+.step-current:before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: -20px;
+  border-radius: 100%;
+  width: 15px;
+  height: 15px;
+  background-color: white;
+  border: 2px solid #00b289;
+}
+.step-current:after {
+  content: "";
+  position: absolute;
+  top: 20px;
+  left: -13px;
+  width: 1px;
+  height: 99.5%;
+  background-color: #00b289;
+}
+
+.step-completed {
+  position: relative;
+  margin-bottom: 25px;
+  color: #444a59;
+}
+.step-completed .step-heading {
+  font-size: 14px;
+  color: #a3aec2;
+  margin-bottom: 5px;
+  font-weight: 100;
+}
+.step-completed .step-title {
+  font-size: 16px;
+  color: #444a59;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+.step-completed:before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: -20px;
+  border-radius: 100%;
+  width: 15px;
+  height: 15px;
+  background-color: #00b289;
+  border: 0 solid #00b289;
+}
+.step-completed:after {
+  content: "";
+  position: absolute;
+  top: 20px;
+  left: -13px;
+  width: 1px;
+  height: 99.5%;
+  background-color: #00b289;
 }
