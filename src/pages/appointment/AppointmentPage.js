@@ -12,7 +12,7 @@ const AppointmentPage = () => {
   }, []);
 
   return (
-    <main class="mt-9 sm:mt-[55px] lg:mt-[67px] xl:mt-[83px]">
+    <main className="mt-9 sm:mt-[55px] lg:mt-[67px] xl:mt-[83px]">
       <Appointment/>
     </main>
   )

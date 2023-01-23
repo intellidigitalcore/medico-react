@@ -28,7 +28,7 @@ const Banner = () => {
         </div>
 
         {/* image */}
-        <div className="h-[192px] sm:h-[300px] md:h-auto w-full">
+        <div className="h-[192px] sm:h-[300px] md:h-auto w-full px-4 md:px-0">
           <img src={banner} alt="Banner" className="w-full h-full object-cover"/>
         </div>
       </div>
@@ -36,4 +36,4 @@ const Banner = () => {
   )
 }
 
-export default Banner
+export default Banner;

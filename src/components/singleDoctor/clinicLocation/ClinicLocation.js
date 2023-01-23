@@ -12,7 +12,7 @@ const ClinicLocation = () => {
         {/* cards */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
           {
-            locations.map((location) => <SingleLocation data={location}/>)
+            locations.map((location) => <SingleLocation key={location.id} data={location}/>)
           }
         </div>
       </div>

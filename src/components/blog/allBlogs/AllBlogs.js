@@ -16,7 +16,7 @@ const AllBlogs = () => {
     }
     else{
       setFilteredBlogs(blogs.filter((blog) => blog.category.toLowerCase() === category.toLowerCase()));
-      setActive(category)
+      setActive(category);
     }
   }
 

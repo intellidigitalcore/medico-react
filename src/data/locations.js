@@ -5,28 +5,28 @@ import location4 from '../assets/images/location/location3.jpg';
 
 export const locations = [
   {
-    id: 1,
+    id: "loc1",
     image: location1,
     clinic: "Kindred Soul Medical Clinic",
     address: `9020 Garland Rd, Dallas
     TX 75218, USA`
   },
   {
-    id: 2,
+    id: "loc2",
     image: location2,
     clinic: "Jamestone Medical Clinic",
     address: `9020 Garland Rd, Dallas
     TX 75218, USA`
   },
   {
-    id: 3,
+    id: "loc3",
     image: location3,
-    clinic: "Oxford Medical Clinic",
+    clinic: "US Oxford Medical Clinic",
     address: `9020 Garland Rd, Dallas
     TX 75218, USA`
   },
   {
-    id: 4,
+    id: "loc4",
     image: location4,
     clinic: "Healthy Life Medical Clinic",
     address: `9020 Garland Rd, Dallas
