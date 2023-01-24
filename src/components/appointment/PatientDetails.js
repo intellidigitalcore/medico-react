@@ -87,17 +87,17 @@ function PatientDetails({search, handlePrev,handleNext}) {
 
         {/* Login tab content */}
         <div className={`${activeBtn === 'Login' ? '' : 'hidden'}`}>
-          <div class="max-w-[580px] mx-auto">
+          <div className="max-w-[580px] mx-auto">
             {/* email */}
-            <div class="mb-6">
-              <label for="email_login" class="block mb-2 text-sm lg:text-base font-semibold text-primary-text">Email</label>
-              <input type="email" id="email_login" placeholder="Email" class="outline-none border border-solid border-black/20 rounded-lg w-full h-10 px-[10px] text-sm text-primary-text placeholder:text-sm placeholder:text-primary-text/40"/>
+            <div className="mb-6">
+              <label htmlFor="email_login" className="block mb-2 text-sm lg:text-base font-semibold text-primary-text">Email</label>
+              <input type="email" id="email_login" placeholder="Email" className="outline-none border border-solid border-black/20 rounded-lg w-full h-10 px-[10px] text-sm text-primary-text placeholder:text-sm placeholder:text-primary-text/40"/>
             </div>
 
             {/* password */}
             <div>
-              <label for="password_login" class="block mb-2 text-sm lg:text-base font-semibold text-primary-text">Password</label>
-              <input type="password" id="password_login" placeholder="Password" class="outline-none border border-solid border-black/20 rounded-lg w-full h-10 px-[10px] text-sm text-primary-text placeholder:text-sm placeholder:text-primary-text/40"/>
+              <label htmlFor="password_login" className="block mb-2 text-sm lg:text-base font-semibold text-primary-text">Password</label>
+              <input type="password" id="password_login" placeholder="Password" className="outline-none border border-solid border-black/20 rounded-lg w-full h-10 px-[10px] text-sm text-primary-text placeholder:text-sm placeholder:text-primary-text/40"/>
             </div>
           </div>
         </div>
@@ -109,4 +109,4 @@ function PatientDetails({search, handlePrev,handleNext}) {
   )
 }
 
-export default PatientDetails
+export default PatientDetails;

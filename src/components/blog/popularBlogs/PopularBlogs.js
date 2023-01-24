@@ -18,7 +18,7 @@ const PopularBlogs = () => {
                   <img src={previewImage} className="w-full h-full object-cover" alt="Blog" />
                   <div className="absolute h-full w-full bg-black/40 inset-0 z-10 p-4 lg:p-6 xl:p-12 2xl:p-[66px] flex items-end">
                     <div>
-                      <Link to={`/blog/${id}`} className="block text-2xl lg:text-3xl xl:text-[40px] xl:leading-[60px] font-semibold text-white pb-2 lg:pb-4 xl:pb-6">{blogTitle}</Link>
+                      <Link to={`/blog/${id}`} className="line-clamp block text-2xl lg:text-3xl xl:text-[40px] xl:leading-[60px] font-semibold text-white pb-2 lg:pb-4 xl:pb-6">{blogTitle}</Link>
                       <p className="text-base lg:text-xl font-semibold text-white">{author}</p>
                       <small className="inline-block font-light text-sm lg:text-base text-white">{authorDesignation}</small>
                     </div>

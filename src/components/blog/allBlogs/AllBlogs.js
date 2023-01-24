@@ -7,7 +7,7 @@ const AllBlogs = () => {
   const [active, setActive] = useState('all');
   const [showSearchInput, setShowSearchInput] = useState(false);
   const [filteredBlogs, setFilteredBlogs] = useState(blogs);
-  const filterCategories = ['all', 'clinic', 'health checkup', 'modern life']
+  const filterCategories = ['all', 'clinic', 'health checkup', 'modern life'];
 
   const handleFilter = (category) => {
     if(category.toLowerCase() === 'all'){
@@ -31,7 +31,7 @@ const AllBlogs = () => {
       if(window.innerWidth < 1023){
         setShowSearchInput(false);
       }
-    })
+    });
   }, []);
 
   return (

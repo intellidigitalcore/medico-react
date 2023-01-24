@@ -11,7 +11,7 @@ const SinglePopular = ({data}) => {
 
       {/* <!-- blog name --> */}
       <div>
-        <Link to={`/blog/${id}`} className="inline-block mb-2 text-base font-medium text-primary-text hover:text-secondary">{blogTitle.length > 60 ? blogTitle.substr(0, 60) + '...' : blogTitle}</Link>
+        <Link to={`/blog/${id}`} className="line-clamp inline-block mb-2 text-base font-medium text-primary-text hover:text-secondary">{blogTitle}</Link>
         <ul className="flex items-center gap-4">
           <li><p className="text-xs text-primary-text/40">{time} to read</p></li>
           <li><p className="text-xs text-primary-text/40">{date} </p></li>

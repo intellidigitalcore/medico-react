@@ -43,12 +43,24 @@ const Header = () => {
 
               {/* menu items */}
               <ul className="flex flex-col lg:flex-row lg:items-center gap-4 lg:gap-7">
-                <li><NavLink to="/" end onClick={() => setOpenMenu(false)} className="nav-link inlione-block text-base text-primary-text">Home</NavLink></li>
-                <li><NavLink to="/about" onClick={() => setOpenMenu(false)} className="nav-link inlione-block text-base text-primary-text">About</NavLink></li>
-                <li><NavLink to="/service" onClick={() => setOpenMenu(false)} className="nav-link inlione-block text-base text-primary-text">Services</NavLink></li>
-                <li><NavLink to="/doctors" onClick={() => setOpenMenu(false)} className="nav-link inlione-block text-base text-primary-text">Doctors</NavLink></li>
-                <li><NavLink to="/blog" onClick={() => setOpenMenu(false)} className="nav-link inlione-block text-base text-primary-text">Blog</NavLink></li>
-                <li><NavLink to="/login" onClick={() => setOpenMenu(false)} className="inline-block py-3 px-12 border border-secondary/20 bg-secondary/10 text-sm font-semibold text-secondary rounded-md">Login</NavLink></li>
+                <li>
+                  <NavLink to="/" end onClick={() => setOpenMenu(false)} className="nav-link inlione-block text-base text-primary-text">Home</NavLink>
+                </li>
+                <li>
+                  <NavLink to="/about" onClick={() => setOpenMenu(false)} className="nav-link inlione-block text-base text-primary-text">About</NavLink>
+                </li>
+                <li>
+                  <NavLink to="/service" onClick={() => setOpenMenu(false)} className="nav-link inlione-block text-base text-primary-text">Services</NavLink>
+                </li>
+                <li>
+                  <NavLink to="/doctors" onClick={() => setOpenMenu(false)} className="nav-link inlione-block text-base text-primary-text">Doctors</NavLink>
+                </li>
+                <li>
+                  <NavLink to="/blog" onClick={() => setOpenMenu(false)} className="nav-link inlione-block text-base text-primary-text">Blog</NavLink>
+                </li>
+                <li>
+                  <NavLink to="/login" onClick={() => setOpenMenu(false)} className="inline-block py-3 px-12 border border-secondary/20 bg-secondary/10 text-sm font-semibold text-secondary rounded-md">Login</NavLink>
+                </li>
               </ul>
             </div>
           </div>
