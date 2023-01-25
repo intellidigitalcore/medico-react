@@ -2,7 +2,6 @@ import { useState } from 'react';
 import DatePicker from 'react-datepicker';
 import AppointmentTitle from './AppointmentTitle';
 import StepButtons from './StepButtons';
-import '../../assets/css/datepicker.css';
 
 function SelectDateTime({ search, handlePrev, handleNext }) {
   const [startDate, setStartDate] = useState(new Date());

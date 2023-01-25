@@ -4,6 +4,7 @@ import AppointmentTitle from "./AppointmentTitle";
 import StepButtons from "./StepButtons";
 
 function SelectClinic({ search, handleNext }) {
+
   return (
     <div className="single-content relative h-full w-full flex flex-col justify-between">
       {/* title */}

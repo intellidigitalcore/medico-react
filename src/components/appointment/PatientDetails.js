@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import AppointmentDropdown from './AppointmentDropdown';
+import AppointmentInput from './AppointmentInput';
 import AppointmentTitle from './AppointmentTitle';
 import StepButtons from './StepButtons';
 
@@ -35,35 +36,21 @@ function PatientDetails({search, handlePrev,handleNext}) {
         {/* Registration tab content */}
         <div className={`${activeBtn === 'Register' ? '' : 'hidden'}`}>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
+
             {/* first name */}
-            <div>
-              <label htmlFor="fname" className="block mb-2 text-sm lg:text-base font-semibold text-primary-text">First Name</label>
-              <input type="text" id="fname" placeholder="First Name" className="outline-none border border-solid border-black/20 rounded-lg w-full h-10 px-[10px] text-sm text-primary-text placeholder:text-sm placeholder:text-primary-text/40"/>
-            </div>
+            <AppointmentInput id={"fname"} type={"text"} placeholder={"First Name"} label={"First Name"}/>
 
             {/* last name */}
-            <div>
-              <label htmlFor="lname" className="block mb-2 text-sm lg:text-base font-semibold text-primary-text">Last Name</label>
-              <input type="text" id="lname" placeholder="Last Name" className="outline-none border border-solid border-black/20 rounded-lg w-full h-10 px-[10px] text-sm text-primary-text placeholder:text-sm placeholder:text-primary-text/40"/>
-            </div>
+            <AppointmentInput id={"lname"} type={"text"} placeholder={"Last Name"} label={"Last Name"}/>
 
             {/* email */}
-            <div>
-              <label htmlFor="email" className="block mb-2 text-sm lg:text-base font-semibold text-primary-text">Email</label>
-              <input type="email" id="email" placeholder="Email" className="outline-none border border-solid border-black/20 rounded-lg w-full h-10 px-[10px] text-sm text-primary-text placeholder:text-sm placeholder:text-primary-text/40"/>
-            </div>
+            <AppointmentInput id={"email"} type={"email"} placeholder={"Email"} label={"Email"}/>
 
             {/* Phone */}
-            <div>
-              <label htmlFor="phone" className="block mb-2 text-sm lg:text-base font-semibold text-primary-text">Phone</label>
-              <input type="tel" id="phone" placeholder="Phone" className="outline-none border border-solid border-black/20 rounded-lg w-full h-10 px-[10px] text-sm text-primary-text placeholder:text-sm placeholder:text-primary-text/40"/>
-            </div>
+            <AppointmentInput id={"phone"} type={"tel"} placeholder={"Phone"} label={"Phone"}/>
 
             {/* Age */}
-            <div>
-              <label htmlFor="age" className="block mb-2 text-sm lg:text-base font-semibold text-primary-text">Age</label>
-              <input type="text" id="age" placeholder="Age" className="outline-none border border-solid border-black/20 rounded-lg w-full h-10 px-[10px] text-sm text-primary-text placeholder:text-sm placeholder:text-primary-text/40"/>
-            </div>
+            <AppointmentInput id={"age"} type={"text"} placeholder={"Age"} label={"Age"}/>
 
             {/* Gender */}
             <div>
@@ -72,33 +59,21 @@ function PatientDetails({search, handlePrev,handleNext}) {
             </div>
 
             {/* Password */}
-            <div>
-              <label htmlFor="password" className="block mb-2 text-sm lg:text-base font-semibold text-primary-text">Password</label>
-              <input type="password" id="password" placeholder="Password" className="outline-none border border-solid border-black/20 rounded-lg w-full h-10 px-[10px] text-sm text-primary-text placeholder:text-sm placeholder:text-primary-text/40"/>
-            </div>
+            <AppointmentInput id={"password"} type={"password"} placeholder={"Password"} label={"Password"}/>
 
             {/* Confirm Password */}
-            <div>
-              <label htmlFor="cpassword" className="block mb-2 text-sm lg:text-base font-semibold text-primary-text">Confirm Password</label>
-              <input type="password" id="cpassword" placeholder="Confirm Password" className="outline-none border border-solid border-black/20 rounded-lg w-full h-10 px-[10px] text-sm text-primary-text placeholder:text-sm placeholder:text-primary-text/40"/>
-            </div>
+            <AppointmentInput id={"cpassword"} type={"password"} placeholder={"Confirm Password"} label={"Confirm Password"}/>
           </div>
         </div>
 
         {/* Login tab content */}
-        <div className={`${activeBtn === 'Login' ? '' : 'hidden'}`}>
-          <div className="max-w-[580px] mx-auto">
+        <div className={activeBtn === 'Login' ? '' : 'hidden'}>
+          <div className="max-w-[580px] mx-auto space-y-6">
             {/* email */}
-            <div className="mb-6">
-              <label htmlFor="email_login" className="block mb-2 text-sm lg:text-base font-semibold text-primary-text">Email</label>
-              <input type="email" id="email_login" placeholder="Email" className="outline-none border border-solid border-black/20 rounded-lg w-full h-10 px-[10px] text-sm text-primary-text placeholder:text-sm placeholder:text-primary-text/40"/>
-            </div>
+            <AppointmentInput id={"email_login"} type={"email"} placeholder={"Email"} label={"Email"}/>
 
             {/* password */}
-            <div>
-              <label htmlFor="password_login" className="block mb-2 text-sm lg:text-base font-semibold text-primary-text">Password</label>
-              <input type="password" id="password_login" placeholder="Password" className="outline-none border border-solid border-black/20 rounded-lg w-full h-10 px-[10px] text-sm text-primary-text placeholder:text-sm placeholder:text-primary-text/40"/>
-            </div>
+            <AppointmentInput id={"password_login"} type={"password"} placeholder={"Password"} label={"Password"}/>
           </div>
         </div>
       </div>
