@@ -47,7 +47,7 @@ const Appointment = () => {
         <div className="grid grid-cols-1 xl:grid-cols-4 gap-6">
           {/*  left part */}
           <div className="rounded-lg overflow-hidden bg-white shadow-[4px_4px_20px_rgba(0,0,0,0.08),-4px_-4px_20px_rgba(0,0,0,0.08)] p-4 hidden xl:block">
-            <ul className="space-y-4 tab-list" id="progressbar">    
+            <ul className="space-y-4 tab-list" id="progressbar">
               {
                 appointments.map(({id, title, description}, index) => (
                   <li key={id} className={`${index < completedSteps ? 'checked active' : index > completedSteps ? 'step-incomplete' : 'active'} pl-9 relative min-h-[70px] after:content after:h-[calc(100%-32px)] after:w-[1px] after:rounded-md after:bg-primary-text/40 after:absolute after:left-[10px] after:bottom-0 last:after:hidden`}>

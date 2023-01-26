@@ -6,7 +6,7 @@ const SingleCounter = ({counterData}) => {
 
   return (
     <li className="w-1/2 sm:w-1/3 lg:w-full text-center">
-      <p className="text-[40px] lg:text-5xl xl:text-[64px] font-semibold text-[rgba(255,255,255,0.16)]">250+</p>
+      <p className="text-[40px] lg:text-5xl xl:text-[64px] font-semibold text-[rgba(255,255,255,0.16)]">{count}+</p>
       
       <CountUp start={0} end={count}>
         {({ countUpRef, start }) => (
@@ -22,4 +22,4 @@ const SingleCounter = ({counterData}) => {
   )
 }
 
-export default SingleCounter
+export default SingleCounter;
