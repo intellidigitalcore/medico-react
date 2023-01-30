@@ -47,7 +47,7 @@ const Header = () => {
                 {
                   menuItems.map((item, i) => (
                     <li key={i}>
-                      <NavLink to={item === "home" ? "/" : item} end onClick={() => setOpenMenu(false)} className="nav-link capitalize inlione-block text-base text-primary-text">{item}</NavLink>
+                      <NavLink to={item === "home" ? "/" : `/${item}`} end onClick={() => setOpenMenu(false)} className="nav-link capitalize inlione-block text-base text-primary-text">{item}</NavLink>
                     </li>
                   ))
                 }
