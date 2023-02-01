@@ -14,9 +14,9 @@ import blog11 from '../assets/images/blog/blog11.jpg';
 import blog12 from '../assets/images/blog/blog12.jpg';
 import blog13 from '../assets/images/blog/blog13.jpg';
 import blogAuthor from '../assets/images/blog/blog-author.png';
-import author1 from '../assets/images/blog/author1.png';
-import author2 from '../assets/images/blog/author2.png';
-import author3 from '../assets/images/blog/author3.png';
+import author1 from '../assets/images/doctors/full1.jpg';
+import author2 from '../assets/images/doctors/full4.jpg';
+import author3 from '../assets/images/doctors/full3.jpg';
 
 export const blogs = [
   {
