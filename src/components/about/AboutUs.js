@@ -10,6 +10,7 @@ const AboutUs = () => {
             <img src={signature} alt="Signature" className="mx-auto md:mx-0"/>
             <span className="inline-block text-primary-text text-base md:text-xl">CEO & Founder</span>
           </div>
+          
           <div className="md:col-span-6 lg:col-span-7 text-center md:text-left">
             <p className="pb-4 text-sm lg:text-base text-primary-text/60">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
             <p className="text-sm lg:text-base text-primary-text/60">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting</p>
