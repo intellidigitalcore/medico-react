@@ -10,7 +10,7 @@ function PatientDetails({search, handlePrev,handleNext}) {
 
   const [showGender, setShowGender] = useState(false);
   const [gender, setGender] = useState("Gender");
-  const genders = ["Gender", "Male", "Female"];
+  const genders = ["Male", "Female"];
 
   const handleTab = (item) => {
     setActiveBtn(item);
